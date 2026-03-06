@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" chartset="utf-8" />
+    <title>BÁNH MÌ XUYẾN LỘC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+    <div id="banhmixuyenloc"><h1>Bánh Mì Xuyến Lộc</h1></div>
+    <div id="Thongtinlienhe">
+      <div class="label">Họ và Tên:</div>
+      <div><input class="input" id="fullname" type="text" /></div>
+      <div><label class="label">Địa chỉ </label></div>
+      <div><input class="input" id="diachi" type="text" /></div>
+      <div><label class="label">Số điện thoại: </label></div>
+      <div>
+        <input
+          class="input"
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        />
+      </div>
+    </div>
+    <div class="Danhsachhang">
+      <div id="STT">
+        <div>STT</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+      <div id="tensanpham">
+        <div>Tên Sản Phẩm</div>
+        <div>Bánh Gối 265g</div>
+        <div>Bánh Nho 130g</div>
+        <div>Bánh Brioche 250g</div>
+        <div>Bánh Hoa Cúc 270g</div>
+        <div>Bơ Sữa Cắt Lát 270g</div>
+        <div>Bơ Sấy Mật</div>
+        <div>Sữa Dừa Nho 270g</div>
+        <div>Bánh Mì Ruốc 60g</div>
+        <div>Bánh Socola 60g</div>
+        <div>Bánh Cốm 60g</div>
+        <div>Gà Cay Phô Mai 60g</div>
+        <div>Bông Lan Nho 35g</div>
+      </div>
+
+      <div id="donvi">
+        <div>ĐVT</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Gói</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+      </div>
+      <div id="dongia">
+        <div>Đơn Giá</div>
+        <div>1100</div>
+        <div>7000</div>
+        <div>15000</div>
+        <div>16000</div>
+        <div>16000</div>
+        <div>17000</div>
+        <div>18000</div>
+        <div>4000</div>
+        <div>4000</div>
+        <div>4000</div>
+        <div>4000</div>
+        <div>3000</div>
+      </div>
+      <div id="Soluong">
+        <div>Số lượng</div>
+        <input id="banhgoi" class="input" type="number" />
+        <input id="banhnho" class="input" type="number" />
+        <input id="banhbrioche" class="input" type="number" />
+        <input id="banhhoacuc" class="input" type="number" />
+        <input id="banhbosua" class="input" type="number" />
+        <input id="banhbomat" class="input" type="number" />
+        <input id="banhsuaduanho" class="input" type="number" />
+        <input id="banhmiruoc" class="input" type="number" />
+        <input id="banhsocola" class="input" type="number" />
+        <input id="banhcom" class="input" type="number" />
+        <input id="banhgacay" class="input" type="number" />
+        <input id="banhbonglannho" class="input" type="number" />
+      </div>
+      <div id="thanhtien">
+        <div>Thành Tiền</div>
+        <div id="ttbanhgoi"></div>
+        <div id="ttbanhnho"></div>
+        <div id="ttbanhbrioche"></div>
+        <div id="ttbanhhoacuc"></div>
+        <div id="ttbanhbosua"></div>
+        <div id="ttbanhbomat"></div>
+        <div id="ttbanhsuaduanho"></div>
+        <div id="ttbanhmiruoc"></div>
+        <div id="ttbanhsocola"></div>
+        <div id="ttbanhcom"></div>
+        <div id="ttbanhgacay"></div>
+        <div id="ttbanhbonglannho"></div>
+      </div>
+    </div>
+    <div id="tongtien">
+      <div>Tổng Tiền</div>
+      <div id="httongtien"></div>
+    </div>
+    <div id="hienthichu"></div>
+    <button id="inhoadon">In Hoá Đơn</button>
+  </div>
+   
+  <div id="hoadon">
+    <div>
+    <h1 id="banhmixuyenloc">Hóa Đơn Bán Lẻ</h1>
+    <div id="Thongtinlienhe">
+      <div class="label">Họ và Tên:</div>
+      <div class="input" id="hdfullname" type="text"></div>
+      <div class="label">Địa chỉ: </div>
+      <div class="input" id="hddiachi" type="text" /></div>
+      <div class="label">Số điện thoại: </div>
+      <div
+          class="input"
+          type="tel"
+          id="hdphone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        >
+      </div>
+    </div>
+    <section class="Danhsachhang">
+      <div id="STT">
+        <div>STT</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+      <div id="tensanpham">
+        <div>Tên Sản Phẩm</div>
+        <div>Bánh Gối 265g</div>
+        <div>Bánh Nho 130g</div>
+        <div>Bánh Brioche 250g</div>
+        <div>Bánh Hoa Cúc 270g</div>
+        <div>Bơ Sữa Cắt Lát 270g</div>
+        <div>Bơ Sấy Mật</div>
+        <div>Sữa Dừa Nho 270g</div>
+        <div>Bánh Mì Ruốc 60g</div>
+        <div>Bánh Socola 60g</div>
+        <div>Bánh Cốm 60g</div>
+        <div>Gà Cay Phô Mai 60g</div>
+        <div>Bông Lan Nho 35g</div>
+      </div>
+
+      <div id="donvi">
+        <div>ĐVT</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Gói</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+        <div>Cái</div>
+      </div>
+      <div id="dongia">
+        <div>Đơn Giá</div>
+        <div>1100</div>
+        <div>7000</div>
+        <div>15000</div>
+        <div>16000</div>
+        <div>16000</div>
+        <div>17000</div>
+        <div>18000</div>
+        <div>4000</div>
+        <div>4000</div>
+        <div>4000</div>
+        <div>4000</div>
+        <div>3000</div>
+      </div>
+      <div id="Soluong">
+        <div>Số lượng</div>
+        <div id="hdbanhgoi" ></div>
+        <div id="hdbanhnho" ></div>
+        <div id="hdbanhbrioche" ></div>
+        <div id="hdbanhhoacuc" ></div>
+        <div id="hdbanhbosua" ></div>
+        <div id="hdbanhbomat" ></div>
+        <div id="hdbanhsuaduanho" ></div>
+        <div id="hdbanhmiruoc" ></div>
+        <div id="hdbanhsocola" ></div>
+        <div id="hdbanhcom" ></div>
+        <div id="hdbanhgacay" ></div>
+        <div id="hdbanhbonglannho" ></div>
+      </div>
+      <div id="thanhtien">
+        <div>Thành Tiền</div>
+        <div id="hdttbanhgoi"></div>
+        <div id="hdttbanhnho"></div>
+        <div id="hdttbanhbrioche"></div>
+        <div id="hdttbanhhoacuc"></div>
+        <div id="hdttbanhbosua"></div>
+        <div id="hdttbanhbomat"></div>
+        <div id="hdttbanhsuaduanho"></div>
+        <div id="hdttbanhmiruoc"></div>
+        <div id="hdttbanhsocola"></div>
+        <div id="hdttbanhcom"></div>
+        <div id="hdttbanhgacay"></div>
+        <div id="hdttbanhbonglannho"></div>
+      </div>
+      
+    </section>
+    <div id="tongtien">
+      <div>Tổng Tiền</div>
+      <div id="hdhttongtien"></div>
+    </div>
+    <div id="hdhienthichu"></div>
+    <button id="chinhsua">Chỉnh Sửa</button>
+    <button id="submit">Thanh Toán</button>
+  </div>
+  
+    <script src="tinhtien.js" ></script>
+  </body>
+</html>
